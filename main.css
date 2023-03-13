@@ -7,3 +7,11 @@ h1 {
     color: black;
     text-align: center;
 }
+
+li {
+    display: inline;
+}
+
+nav {
+    text-align: center;
+}
