@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-nav {
+.navbar {
     text-align: center;
 }
 
@@ -34,4 +34,33 @@ li {
     object-fit: cover;
     width: 300px;
     height: 300px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-size: inherit; 
+    background-color: inherit;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: red;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: center;
 }
