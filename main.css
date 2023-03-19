@@ -8,16 +8,12 @@ h1 {
     text-align: center;
 }
 
-.navbar {
+.navbar{
     text-align: center;
 }
 
 li {
     display: inline;
-}
-
-.container {
-    justify-content: center;
 }
 
 .gallery {
@@ -39,10 +35,10 @@ li {
 .dropdown {
     position: relative;
     display: inline-block;
-    overflow: hidden;
 }
 
 .dropbtn {
+    position: relative;
     font-size: inherit; 
     background-color: inherit;
     border: none;
