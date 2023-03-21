@@ -64,3 +64,17 @@ li {
     display: block;
     text-align: center;
 }
+
+.content {
+    text-align: left;
+    line-height: 175%;
+    width: auto;
+    padding-inline: 100px;
+    padding-top: 100px;
+}
+
+.content img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
