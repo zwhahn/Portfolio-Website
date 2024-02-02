@@ -63,12 +63,13 @@ h1 {
 }
 
 .dropdown {
-    position: relative;
     display: inline-block;
     overflow: hidden;
 }
 
 .dropbtn {
+    position: relative;
+    padding: inherit;
     font-size: inherit; 
     background-color: inherit;
     border: none;
@@ -78,6 +79,7 @@ h1 {
 }
 
 .dropdown-content {
+    position: absolute;
     display: none;
     justify-content: center;
 }
@@ -88,9 +90,8 @@ h1 {
 }
 
 .dropdown-content a {
-    display: flex;
     background-color: orange;
-    text-align: center;
+    justify-content: center;
     padding: 20px 0px;
 }
 
