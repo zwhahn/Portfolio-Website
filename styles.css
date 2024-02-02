@@ -5,14 +5,18 @@
 }
 
 h1 {
+    display: flex;
+    width: 100%;
+    padding: 50px 0px 25px 0px;
     color: black;
-    text-align: center;
+    justify-content: center;
     background-color: yellow;
 }
 
 #title {
     padding: 100px 0px 50px 0px;
     font-size: 50px;
+    text-align: center;
 }
 
 .navbar {
@@ -96,11 +100,11 @@ h1 {
 }
 
 .content {
-    text-align: left;
-    line-height: 175%;
-    width: auto;
-    padding-inline: 100px;
-    padding-top: 100px;
+    display: flex;
+    width: 1000px;
+    min-width: 1000px;
+    background-color:purple;
+    flex-wrap: wrap;
 }
 
 .content img{
