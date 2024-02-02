@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: black;
     text-align: center;
     background-color: yellow;
-    padding: 10px;
+    padding: 100px 0px 50px 0px;
 }
 
 .navbar {
@@ -29,6 +30,7 @@ li {
     display: flex;
     justify-content: space-between;
     width: 1000px;
+    min-width: 1000px;
     background-color:purple;
     flex-wrap: wrap;
 }
