@@ -19,25 +19,22 @@ li {
 .container {
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    background-color: red;
 }
 
 .gallery {
     display: flex;
-    align-items: start;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 5vw);s
-    grid-gap: 15px;
+    justify-content: space-between;
+    width: 75%;
     border: 2px solid purple;
+    flex-wrap: wrap;
 }
 
 .gallery img {
     padding: 10px;
-    height: 100px;
-    object-fit: cover;
     width: 300px;
     height: 300px;
+    object-fit: cover;  /* image filles box */
 }
 
 .dropdown {
