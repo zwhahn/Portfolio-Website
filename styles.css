@@ -6,10 +6,13 @@
 h1 {
     color: black;
     text-align: center;
+    background-color: yellow;
+    padding: 10px;
 }
 
 .navbar {
     text-align: center;
+    background-color: lightblue;
 }
 
 li {
