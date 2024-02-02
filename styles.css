@@ -17,15 +17,19 @@ li {
 }
 
 .container {
+    display: flex;
     justify-content: center;
+    border: 2px solid red;
 }
 
 .gallery {
+    display: flex;
     align-items: start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-rows: repeat(8, 5vw);s
     grid-gap: 15px;
+    border: 2px solid purple;
 }
 
 .gallery img {
