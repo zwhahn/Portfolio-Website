@@ -8,16 +8,36 @@ h1 {
     color: black;
     text-align: center;
     background-color: yellow;
+}
+
+#title {
     padding: 100px 0px 50px 0px;
+    font-size: 50px;
 }
 
 .navbar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: lightblue;
+    padding: 0px 0px 30px 0px;
 }
 
-li {
-    display: inline;
+.navbar_menu {
+    display: flex;
+    background-color: beige;
+    font-size: 20px;
+}
+
+.navbar_menu a{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_menu .dropbtn{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container {
@@ -59,16 +79,19 @@ li {
 
 .dropdown-content {
     display: none;
+    justify-content: center;
 }
 
 .dropdown:hover .dropdown-content{
-    display: block;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-content a {
-    display: block;
+    display: flex;
+    background-color: orange;
     text-align: center;
+    padding: 20px 0px;
 }
 
 .content {
