@@ -25,8 +25,8 @@ li {
 .gallery {
     display: flex;
     justify-content: space-between;
-    width: 75%;
-    border: 2px solid purple;
+    width: 1000px;
+    background-color:purple;
     flex-wrap: wrap;
 }
 
