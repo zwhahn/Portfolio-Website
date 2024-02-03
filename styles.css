@@ -105,11 +105,16 @@ h1 {
     width: 1000px;
     min-width: 1000px;
     background-color:purple;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.content img{
+#headshot_image {
+    background-color: olivedrab;
+    padding: 10px;
     width: 300px;
     height: 300px;
-    display: inline-block;
+}
+
+.words {
+    background-color: aqua;
 }
