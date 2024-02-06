@@ -47,6 +47,7 @@ h1 {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: red;
 }
@@ -58,6 +59,7 @@ h1 {
     min-width: 1000px;
     background-color:purple;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 .gallery img {
@@ -102,10 +104,15 @@ h1 {
 
 .content {
     display: flex;
+    flex-direction: row;
     width: 1000px;
     min-width: 1000px;
     background-color:purple;
-    align-items: flex-start;
+    align-self: center;
+}
+
+.subtitle {
+    background-color: brown;
 }
 
 #headshot_image {
