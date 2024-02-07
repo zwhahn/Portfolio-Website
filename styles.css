@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     color: #222222;
 }
 
@@ -112,17 +112,20 @@ h1 {
     align-self: center;
 }
 
-.subtitle {
-    /* background-color: brown; */
-}
-
 #headshot_image {
     /* background-color: olivedrab; */
-    padding: 10px;
-    width: 300px;
-    height: 300px;
+    padding-right: 40px;
+    width: 400px;
+    height: 400px;
 }
 
 .words {
+    font-size: 16px;
     /* background-color: aqua; */
+    line-height: 24px;
+}
+
+p {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
