@@ -10,26 +10,26 @@ h1 {
     padding: 50px 0px 25px 0px;
     color: black;
     justify-content: center;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #title {
     padding: 100px 0px 50px 0px;
     font-size: 50px;
     text-align: center;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 0px 0px 30px 0px;
 }
 
 .navbar_menu {
     display: flex;
-    background-color: beige;
+    /* background-color: beige; */
     font-size: 20px;
 }
 
@@ -49,7 +49,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .gallery {
@@ -57,7 +57,7 @@ h1 {
     justify-content: space-between;
     width: 1000px;
     min-width: 1000px;
-    background-color:purple;
+    /* background-color:purple; */
     flex-wrap: wrap;
     align-self: center;
 }
@@ -78,7 +78,7 @@ h1 {
     position: relative;
     padding: inherit;
     font-size: inherit; 
-    background-color: inherit;
+    /* background-color: inherit; */
     border: none;
     outline: none;
     background-color: inherit;
@@ -97,7 +97,7 @@ h1 {
 }
 
 .dropdown-content a {
-    background-color: orange;
+    /* background-color: orange; */
     justify-content: center;
     padding: 20px 0px;
 }
@@ -107,21 +107,21 @@ h1 {
     flex-direction: row;
     width: 1000px;
     min-width: 1000px;
-    background-color:purple;
+    /* background-color:purple; */
     align-self: center;
 }
 
 .subtitle {
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 #headshot_image {
-    background-color: olivedrab;
+    /* background-color: olivedrab; */
     padding: 10px;
     width: 300px;
     height: 300px;
 }
 
 .words {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
