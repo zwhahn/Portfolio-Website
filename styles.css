@@ -62,7 +62,6 @@ h1 {
 .dropdown-content {
     position: absolute;
     display: none;
-    justify-content: center;
 }
 
 .dropdown:hover .dropdown-content{
@@ -72,8 +71,9 @@ h1 {
 
 .dropdown-content a {
     /* background-color: orange; */
-    justify-content: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
     background-color: #d1d1d1;
 }
 
