@@ -28,7 +28,7 @@ h1 {
     display: flex;
     justify-content: center;
     /* background-color: lightblue; */
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 45px 0px;
 }
 
 .navbar_menu {
@@ -49,10 +49,8 @@ h1 {
 }
 
 .dropbtn {
-    position: relative;
     padding: 0px 30px;
     font-size: inherit; 
-    /* background-color: inherit; */
     border: none;
     outline: none;
     font-family: inherit;
