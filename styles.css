@@ -65,6 +65,7 @@ h1 {
 }
 
 .dropdown-content {
+    z-index: 9999;
     position: absolute;
     display: none;
 }
@@ -101,10 +102,32 @@ h1 {
 }
 
 .gallery img {
+    /* background-color: red; */
     padding-bottom: 45px;
     width: 300px;
     height: 300px;
     object-fit: cover;  /* image filles box */
+}
+
+.image_wrapper {
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    align-self: end;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    width: 100%;
+    background-color: #d1d1d1;
+    opacity: 100%;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
 }
 
 .content {
