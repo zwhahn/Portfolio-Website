@@ -58,6 +58,7 @@ h1 {
 }
 
 .dropdown-content {
+    z-index: 9999;
     position: absolute;
     display: none;
 }
@@ -116,7 +117,7 @@ h1 {
     margin-bottom: 45px;
     width: 100%;
     background-color: #d1d1d1;
-    opacity: 75%;
+    opacity: 100%;
     text-align: center;
     font-size: 16px;
     height: 60px;
