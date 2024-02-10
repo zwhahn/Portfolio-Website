@@ -24,6 +24,18 @@ h1 {
     /* background-color: bisque; */
 }
 
+#index {
+    color: #222222;
+}
+
+#aboutme {
+    color: #222222;
+}
+
+#resume {
+    color: #222222;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
