@@ -163,7 +163,6 @@ h1 {
     grid-template-columns: 33% 33% 33%;
     width: 100%;
     column-gap: 30px;
-    align-items: center;
 }
 
 .grid img {

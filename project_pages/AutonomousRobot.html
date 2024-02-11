@@ -72,7 +72,18 @@
                     <figcaption>Proportional + Derivative + Integral Feedback <br><br> </figcaption>
                 </figure>
                 
-               
+                <h2 class="subsection span3">Pure Pursuit and Bezier Curves</h2>
+                <div class="span2">
+                    <p>Next,  pure pursuit with Bezier curves was considered. Bezier curves have two major benefits for robotic path planning. First, they have few turning points and are 
+                        therefore more smooth. Second, the tangent vectors of the curve at the first and last control point are directed along the Bezier polygon. This allows easy control 
+                        of the robots final location and orientation.
+                    </p>
+                    <p>To the right is a Matlab script that allows the user to select n number of waypoints (which act as the first and last control point) for the robot to travel to. 
+                        Once the waypoints have been chosen, two control points are calculated between the waypoints (green dots). Then, Bezier curves are drawn for each set of four 
+                        control points (red line). Finally, the path of the path of the robot is calculated using a Simulink model and overlaid (blue line).
+                    </p>
+                </div>   
+               <img src="../images/AutonomousRobot/PurePursuit.gif">
                 
             </div>
             <!-- <img src="../images/AutonomousRobot/Robot_square.jpg" alt="Autonomous Robot"> -->
