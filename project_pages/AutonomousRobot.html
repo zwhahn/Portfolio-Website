@@ -84,6 +84,20 @@
                     </p>
                 </div>   
                <img src="../images/AutonomousRobot/PurePursuit.gif">
+
+               <h2 class="subsection span3">Dead Reckoning and Kalman Filter</h2>
+               <video class="span3" controls="controls" name="Dead Reckoning">
+                <source src="../images/AutonomousRobot/DeadReckoningPath.mov">
+              </video>
+              <div class="span3">
+                <p>Dead reckoning was implemented using wheel encoders to calculate both distance traveled and steering angle. The robot executes straight-line motion between successive
+                     waypoint. The velocity is preset by the user, while the change in steering is executed by feedback on the orientation error. Once the robot reaches the final waypoint,
+                      it revisits the waypoints in reverse order.</p>
+                <p>Dead reckoning is subject to cumulative error. For this reason a Kalman filter is used as a correction method. Using the encoders we know the position of the robot with 
+                    some accuracy. The orange cones (seen in the video above) act as fiducial markers. The robot knows where the cones are supposed to be in space and the IR sensor is able 
+                    to read the robots actual location from them, again with some accuracy. The Kalman filter is able to combine these two data points to create a more accurate guess to 
+                    where the robot is. Finally, a correction step is implemented so the robot will remain on the correct path over time.   </p>
+              </div>
                 
             </div>
             <!-- <img src="../images/AutonomousRobot/Robot_square.jpg" alt="Autonomous Robot"> -->
