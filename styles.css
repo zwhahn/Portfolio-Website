@@ -190,6 +190,11 @@ h1 {
     padding-top: 30px;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 p {
     margin-bottom: 2em;
     font-size: 16px;
