@@ -190,6 +190,11 @@ h1 {
     padding-top: 30px;
 }
 
+.grid iframe {
+    justify-self: center;
+    margin-bottom: 2em;
+}
+
 figcaption {
     text-align: center;
     font-style: italic;
