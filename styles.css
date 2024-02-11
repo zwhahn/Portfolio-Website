@@ -169,6 +169,13 @@ h1 {
     max-width: 100%;
 }
 
+.grid video {
+    justify-self: center;
+    width: 800px;
+    height: 500px; 
+    padding-bottom: 2em;
+}
+
 #headshot_image {
     /* background-color: olivedrab; */
     padding-right: 40px;
