@@ -83,21 +83,34 @@
                         control points (red line). Finally, the path of the path of the robot is calculated using a Simulink model and overlaid (blue line).
                     </p>
                 </div>   
-               <img src="../images/AutonomousRobot/PurePursuit.gif">
+                <img src="../images/AutonomousRobot/PurePursuit.gif">
 
-               <h2 class="subsection span3">Dead Reckoning and Kalman Filter</h2>
-               <video class="span3" controls="controls" name="Dead Reckoning">
-                <source src="../images/AutonomousRobot/DeadReckoningPath.mov">
-              </video>
-              <div class="span3">
-                <p>Dead reckoning was implemented using wheel encoders to calculate both distance traveled and steering angle. The robot executes straight-line motion between successive
-                     waypoint. The velocity is preset by the user, while the change in steering is executed by feedback on the orientation error. Once the robot reaches the final waypoint,
-                      it revisits the waypoints in reverse order.</p>
-                <p>Dead reckoning is subject to cumulative error. For this reason a Kalman filter is used as a correction method. Using the encoders we know the position of the robot with 
-                    some accuracy. The orange cones (seen in the video above) act as fiducial markers. The robot knows where the cones are supposed to be in space and the IR sensor is able 
-                    to read the robots actual location from them, again with some accuracy. The Kalman filter is able to combine these two data points to create a more accurate guess to 
-                    where the robot is. Finally, a correction step is implemented so the robot will remain on the correct path over time.   </p>
-              </div>
+                <h2 class="subsection span3">Dead Reckoning and Kalman Filter</h2>
+                <video class="span3" controls="controls" name="Dead Reckoning">
+                    <source src="../images/AutonomousRobot/DeadReckoningPath.mov">
+                </video>
+                <div class="span3">
+                    <p>Dead reckoning was implemented using wheel encoders to calculate both distance traveled and steering angle. The robot executes straight-line motion between successive
+                        waypoint. The velocity is preset by the user, while the change in steering is executed by feedback on the orientation error. Once the robot reaches the final waypoint,
+                        it revisits the waypoints in reverse order.</p>
+                    <p>Dead reckoning is subject to cumulative error. For this reason a Kalman filter is used as a correction method. Using the encoders we know the position of the robot with 
+                        some accuracy. The orange cones (seen in the video above) act as fiducial markers. The robot knows where the cones are supposed to be in space and the IR sensor is able 
+                        to read the robots actual location from them, again with some accuracy. The Kalman filter is able to combine these two data points to create a more accurate guess to 
+                        where the robot is. Finally, a correction step is implemented so the robot will remain on the correct path over time.   </p>
+                </div>
+
+                <h2 class="subsection span3">Computer Vision</h2>
+                <div class="span3 two_images">
+                    <img src="../images/AutonomousRobot/Cone.png">
+                    <img src="../images/AutonomousRobot/ConeOutline.png">
+                </div>
+                <p class="span3">To replace the IR sensors, computer vision was used to identify and locate cones. The pinhole camera model was used to determine location. </p>
+                <p class="span3">I wrote my computer vision scrip in MATLAB. First, I converted all images to HSV. Next, I translated the image to black and white using a custom HSV threshold. 
+                    Then, I was able to use edge detection and identify the largest zone. Finally, the left-most point on the zone is identified as the corner and the pixel values of the center 
+                    of the cone can be found using simple algebra. </p>
+                <p class="span3">Now, the pixel location of the cone, the height of the camera off the ground, and the focal length are all known. The global coordinates of the cone can be 
+                    calculated using the pinhole camera model.</p>
+                <p class="span3">Unfortunately, due to course time constraints the computer vision was not integrated into the vehicle controls.</p>
                 
             </div>
             <!-- <img src="../images/AutonomousRobot/Robot_square.jpg" alt="Autonomous Robot"> -->
