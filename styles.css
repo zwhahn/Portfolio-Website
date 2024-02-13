@@ -191,9 +191,18 @@ h1 {
     grid-column: span 3;
 }
 
+.two_images {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin-bottom: 1em;
+
+}
+
 .subsection {
     grid-column: span 3;
     padding-top: 30px;
+    padding-bottom: 1em;
 }
 
 .grid iframe {
