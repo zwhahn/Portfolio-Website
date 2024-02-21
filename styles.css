@@ -160,9 +160,9 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    column-gap: 30px;
+    column-gap: 10px;
 }
 
 .grid img {
@@ -183,12 +183,24 @@ h1 {
     height: 300px;
 }
 
-.span2 {
-    grid-column: span 2;
+.span_onethird {
+    grid-column: span 4;
 }
 
-.span3 {
-    grid-column: span 3;
+.span_seven {
+    grid-column: span 7;
+}
+
+.span_five {
+    grid-column: span 5;
+}
+
+.span_twothirds {
+    grid-column: span 8;
+}
+
+.span_all {
+    grid-column: span 12;
 }
 
 .two_images {
@@ -200,7 +212,6 @@ h1 {
 }
 
 .subsection {
-    grid-column: span 3;
     padding-top: 30px;
     padding-bottom: 1em;
 }

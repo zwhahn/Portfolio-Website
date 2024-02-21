@@ -40,40 +40,40 @@
         <h1>Autonomous Robot</h1>
         <div class="content">
             <div class="grid">
-                <img height=300 src="../images/AutonomousRobot/Robot_square.jpg">
-                <div class="span2">
-                    <p class="span2">This project was created as part of the systems engineering course Controls for Autonomous Vehicles. 
+                <img class="span_onethird" height=300 src="../images/AutonomousRobot/Robot_square.jpg">
+                <div class="span_twothirds">
+                    <p>This project was created as part of the systems engineering course Controls for Autonomous Vehicles. 
                     The goal was to create a robot that could autonomously navigate a path using computer vision, IR sensors, and IMUs.</p>
-                    <p class="span2">A car platform was provided with all necessary hardware including a Romi 32U4 control board, IR sensors, 
+                    <p >A car platform was provided with all necessary hardware including a Romi 32U4 control board, IR sensors, 
                     camera, and an LED display, but no software libraries were provided. Overall, I gained experience with control 
                     theory (Simulink, PID's, filtering, pure pursuit, dead reckoning, etc.) while also building on my software skills 
                     (Arduino, MATLAB). </p>
                 </div>
                 
-                <h2 class="subsection span3">Wall Following</h2>
-                <p class="span3">The first challenge tackled in this course was getting the robot to follow a wall at a constant distant. PID control was 
+                <h2 class="subsection span_all">Wall Following</h2>
+                <p class="span_all">The first challenge tackled in this course was getting the robot to follow a wall at a constant distant. PID control was 
                     used to achieve zero steady state error while the IR sensors were used to measure wall distance. </p>
-                <iframe class="span3" width="560" height="315" src="https://www.youtube.com/embed/IFBHnihmxKc?si=rKdy7j0KSL4WcKy1" 
+                <iframe class="span_all" width="560" height="315" src="https://www.youtube.com/embed/IFBHnihmxKc?si=rKdy7j0KSL4WcKy1" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p class="span3">I built a complete, closed loop Simulink model to simulate the robot's motion. I experimented with different types of feedback and 
+                <p class="span_all">I built a complete, closed loop Simulink model to simulate the robot's motion. I experimented with different types of feedback and 
                     the resulting plots are shown below.</p>
-                <figure>
+                <figure class="span_onethird">
                     <img src="../images/AutonomousRobot/ProportionFeedback_unstable.png">
                     <figcaption>Proportional Feedback <br> (Unstable)</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="span_onethird">
                     <img src="../images/AutonomousRobot/ProportionalDerivative.png">
                     <figcaption>Proportional + Derivative Feedback <br> (Stready-State Error)</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="span_onethird">
                     <img src="../images/AutonomousRobot/PDI.png">
                     <figcaption>Proportional + Derivative + Integral Feedback <br><br> </figcaption>
                 </figure>
                 
-                <h2 class="subsection span3">Pure Pursuit and Bezier Curves</h2>
-                <div class="span2">
+                <h2 class="subsection span_all">Pure Pursuit and Bezier Curves</h2>
+                <div class="span_twothirds">
                     <p>Next,  pure pursuit with Bezier curves was considered. Bezier curves have two major benefits for robotic path planning. First, they have few turning points and are 
                         therefore more smooth. Second, the tangent vectors of the curve at the first and last control point are directed along the Bezier polygon. This allows easy control 
                         of the robots final location and orientation.
@@ -83,13 +83,13 @@
                         control points (red line). Finally, the path of the path of the robot is calculated using a Simulink model and overlaid (blue line).
                     </p>
                 </div>   
-                <img src="../images/AutonomousRobot/PurePursuit.gif">
+                <img class="span_onethird" src="../images/AutonomousRobot/PurePursuit.gif">
 
-                <h2 class="subsection span3">Dead Reckoning and Kalman Filter</h2>
-                <video class="span3" controls="controls" name="Dead Reckoning">
+                <h2 class="subsection span_all">Dead Reckoning and Kalman Filter</h2>
+                <video class="span_all" controls="controls" name="Dead Reckoning">
                     <source src="../images/AutonomousRobot/DeadReckoningPath.mov">
                 </video>
-                <div class="span3">
+                <div class="span_all">
                     <p>Dead reckoning was implemented using wheel encoders to calculate both distance traveled and steering angle. The robot executes straight-line motion between successive
                         waypoint. The velocity is preset by the user, while the change in steering is executed by feedback on the orientation error. Once the robot reaches the final waypoint,
                         it revisits the waypoints in reverse order.</p>
@@ -99,18 +99,18 @@
                         where the robot is. Finally, a correction step is implemented so the robot will remain on the correct path over time.   </p>
                 </div>
 
-                <h2 class="subsection span3">Computer Vision</h2>
-                <div class="span3 two_images">
+                <h2 class="subsection span_all">Computer Vision</h2>
+                <div class="span_all two_images">
                     <img src="../images/AutonomousRobot/Cone.png">
                     <img src="../images/AutonomousRobot/ConeOutline.png">
                 </div>
-                <p class="span3">To replace the IR sensors, computer vision was used to identify and locate cones. The pinhole camera model was used to determine location. </p>
-                <p class="span3">I wrote my computer vision scrip in MATLAB. First, I converted all images to HSV. Next, I translated the image to black and white using a custom HSV threshold. 
+                <p class="span_all">To replace the IR sensors, computer vision was used to identify and locate cones. The pinhole camera model was used to determine location. </p>
+                <p class="span_all">I wrote my computer vision scrip in MATLAB. First, I converted all images to HSV. Next, I translated the image to black and white using a custom HSV threshold. 
                     Then, I was able to use edge detection and identify the largest zone. Finally, the left-most point on the zone is identified as the corner and the pixel values of the center 
                     of the cone can be found using simple algebra. </p>
-                <p class="span3">Now, the pixel location of the cone, the height of the camera off the ground, and the focal length are all known. The global coordinates of the cone can be 
+                <p class="span_all">Now, the pixel location of the cone, the height of the camera off the ground, and the focal length are all known. The global coordinates of the cone can be 
                     calculated using the pinhole camera model.</p>
-                <p class="span3">Unfortunately, due to course time constraints the computer vision was not integrated into the vehicle controls.</p>
+                <p class="span_all">Unfortunately, due to course time constraints the computer vision was not integrated into the vehicle controls.</p>
                 
             </div>
             <!-- <img src="../images/AutonomousRobot/Robot_square.jpg" alt="Autonomous Robot"> -->
