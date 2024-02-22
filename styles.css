@@ -24,6 +24,18 @@ h1 {
     /* background-color: bisque; */
 }
 
+#index {
+    color: #222222;
+}
+
+#aboutme {
+    color: #222222;
+}
+
+#resume {
+    color: #222222;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -38,8 +50,14 @@ h1 {
 }
 
 .navbar_menu a{
+    color: #a6a6a6;
     padding: 0px 30px;
     text-decoration: none;
+}
+
+.navbar_menu a:hover {
+    color: #222222;
+    transition-duration: 0.3s;
 }
 
 .dropdown {
@@ -54,12 +72,15 @@ h1 {
     border: none;
     outline: none;
     font-family: inherit;
+    color: #a6a6a6;
     /* background-color: red; */
 }
 
 .dropdown-content {
+    z-index: 9999;
     position: absolute;
     display: none;
+    padding-top: 5px;
 }
 
 .dropdown:hover .dropdown-content{
@@ -94,10 +115,32 @@ h1 {
 }
 
 .gallery img {
+    /* background-color: red; */
     padding-bottom: 45px;
     width: 300px;
     height: 300px;
     object-fit: cover;  /* image filles box */
+}
+
+.image_wrapper {
+    /* background-color: blue; */
+    display: flex;
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    align-self: end;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    width: 100%;
+    background-color: #d1d1d1;
+    opacity: 100%;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
 }
 
 .content {
@@ -115,6 +158,24 @@ h1 {
     padding-top: 30px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.grid img {
+    max-width: 100%;
+}
+
+.grid video {
+    justify-self: center;
+    width: 800px;
+    height: 500px; 
+    padding-bottom: 2em;
+}
+
 #headshot_image {
     /* background-color: olivedrab; */
     padding-right: 40px;
@@ -122,12 +183,51 @@ h1 {
     height: 300px;
 }
 
-.words {
-    font-size: 16px;
-    /* background-color: aqua; */
-    line-height: 24px;
+.span_onethird {
+    grid-column: span 4;
+}
+
+.span_seven {
+    grid-column: span 7;
+}
+
+.span_five {
+    grid-column: span 5;
+}
+
+.span_twothirds {
+    grid-column: span 8;
+}
+
+.span_all {
+    grid-column: span 12;
+}
+
+.two_images {
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin-bottom: 1em;
+
+}
+
+.subsection {
+    padding-top: 30px;
+    padding-bottom: 1em;
+}
+
+.grid iframe {
+    justify-self: center;
+    margin-bottom: 2em;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
 }
 
 p {
     margin-bottom: 2em;
+    font-size: 16px;
+    line-height: 24px;
 }
