@@ -15,6 +15,17 @@ h1 {
     /* background-color: yellow; */
 }
 
+ul {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 160%;
+}
+
+ul span {
+    padding-left: 1em;
+}
+
 #title {
     padding: 100px 0px 70px 0px;
     font-size: 50px;
@@ -201,6 +212,9 @@ h1 {
 
 .span_half {
     grid-column: span 6;
+    justify-self:right;
+    padding-right: 5%;
+
 }
 
 .span_all {
