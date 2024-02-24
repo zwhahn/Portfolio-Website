@@ -199,6 +199,10 @@ h1 {
     grid-column: span 8;
 }
 
+.span_half {
+    grid-column: span 6;
+}
+
 .span_all {
     grid-column: span 12;
 }
