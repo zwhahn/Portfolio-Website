@@ -84,7 +84,6 @@ ul span {
     outline: none;
     font-family: inherit;
     color: #a6a6a6;
-    /* background-color: red; */
 }
 
 .dropdown-content {
@@ -111,7 +110,6 @@ ul span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: red; */
     margin-bottom: 25px;
 }
 
@@ -126,7 +124,6 @@ ul span {
 }
 
 .gallery img {
-    /* background-color: red; */
     padding-bottom: 45px;
     width: 300px;
     height: 300px;
@@ -178,6 +175,7 @@ ul span {
 
 .grid img {
     max-width: 100%;
+    justify-self: right;
 }
 
 .grid video {
@@ -188,10 +186,13 @@ ul span {
 }
 
 #headshot_image {
-    /* background-color: olivedrab; */
     padding-right: 40px;
     width: 300px;
     height: 300px;
+}
+
+.span_quarter {
+    grid-column: span 3;
 }
 
 .span_onethird {
@@ -212,9 +213,6 @@ ul span {
 
 .span_half {
     grid-column: span 6;
-    justify-self:right;
-    padding-right: 5%;
-
 }
 
 .span_all {
