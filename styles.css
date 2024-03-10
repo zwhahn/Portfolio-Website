@@ -115,7 +115,7 @@ ul span {
 .gallery {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    gap: 33px;
+    gap: 50px;
     width: 1000px;
     min-width: 1000px;
     /* background-color:purple; */
@@ -141,7 +141,6 @@ ul span {
     position: absolute;
     align-items: center;
     justify-content: center;
-    margin-bottom: 45px;
     width: 100%;
     background-color: #d1d1d1;
     opacity: 100%;
