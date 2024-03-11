@@ -25,6 +25,10 @@ ul span {
     padding-left: 1em;
 }
 
+span {
+    background-color: inherit;
+}
+
 #title {
     padding: 100px 0px 70px 0px;
     font-size: 50px;
