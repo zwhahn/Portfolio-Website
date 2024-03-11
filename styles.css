@@ -50,26 +50,26 @@ span {
     color: #222222;
 }
 
-.navbar {
+.navbar_holder {
     display: flex;
     justify-content: center;
     /* background-color: lightblue; */
     padding: 0px 0px 45px 0px;
 }
 
-.navbar_menu {
+.navbar {
     display: flex;
     /* background-color: beige; */
     font-size: 16px;
 }
 
-.navbar_menu a{
+.navbar a{
     color: #a6a6a6;
     padding: 0px 30px;
     text-decoration: none;
 }
 
-.navbar_menu a:hover {
+.navbar a:hover {
     color: #222222;
     transition-duration: 0.3s;
 }
