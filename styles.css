@@ -114,13 +114,13 @@ ul span {
 
 .gallery {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    gap: 50px;
-    width: 1000px;
-    min-width: 1000px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    width: 75%;
     /* background-color:purple; */
     flex-wrap: wrap;
     align-self: center;
+    grid-row-gap: 30px;
 }
 
 .gallery img {
