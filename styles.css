@@ -160,7 +160,7 @@ span {
     flex-direction: row;
     width: 1000px;
     min-width: 1000px;
-    /* background-color:purple; */
+    background-color:purple;
     align-self: center;
     justify-content: center;
 }
@@ -172,7 +172,7 @@ span {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    width: fit-content;
     column-gap: 10px;
 }
 
