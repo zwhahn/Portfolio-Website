@@ -210,6 +210,10 @@ span {
     grid-column: span 5;
 }
 
+.span_six {
+    grid-column: span 6;
+}
+
 .span_twothirds {
     grid-column: span 8;
 }
